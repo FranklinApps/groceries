@@ -8,5 +8,5 @@ module.exports = (app)=>{
     app.post("/api/users/login", UserController.login);
     app.post("/api/users/logout", UserController.logout);
     app.get("/api/loggedInUser", authenticate, UserController.getLoggedInUser);
-    app.put("/api/loggedInUser", authenticate, UserController.addFavoriteRecipe)
+    // app.put("/api/loggedInUser", authenticate, UserController.addGroceryItems)
 }
