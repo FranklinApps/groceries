@@ -38,7 +38,7 @@ a{
 .submitBtn {
     margin: 1vh 0;
     align-self: center;
-    background-color: #f8bc00;
+    background-color: #da7b08;
     border-radius: .25em;
     border: none;
     padding: 1vh 1vw;
@@ -51,7 +51,7 @@ a{
 .submitBtn:hover {
     margin: 1vh 0;
     align-self: center;
-    background-color: #da7b08;
+    background-color: #f8bc00;
     border-radius: .25em;
     border: none;
     padding: 1.3vh 1.2vw;

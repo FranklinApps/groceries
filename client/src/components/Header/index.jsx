@@ -30,7 +30,7 @@ function Header(){
     <div className='headerContainer'>
             <ul className='headerLinkList'>
                 <li><a href='/home'>Home</a></li>
-                <li><a href='/new'>Add</a></li>
+                <li><a href='/newDew'>Add</a></li>
                 <li><a href='/' onClick={logout}>Logout</a></li>
             </ul>
         </div>);
