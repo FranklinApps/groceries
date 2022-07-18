@@ -1,0 +1,50 @@
+.loginRegisterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    color:#f8bc00;
+    margin: 10vh 0 0 0;
+    font-size: 7em;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    background-color: #f8bc00;
+    justify-self: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25em;
+    padding: 1vh 1vw;
+    margin: 5vw;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 3px 5px rgb(122, 122, 122);
+    transition-duration: 200ms;
+}
+
+.btn:hover {
+    background-color: #da7b08;
+    justify-self: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25em;
+    padding: 1.25vh 1.25vw;
+    margin: 5vw;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 3px 5px rgb(122, 122, 122);
+    transition-duration: 125ms;
+}
+
+.socialContainer{
+    font-size: 7vh;
+}

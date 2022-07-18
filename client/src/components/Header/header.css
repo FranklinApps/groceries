@@ -1,0 +1,92 @@
+.headerContainer{
+    width:100vw;
+    background-color: #da7b08;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerLogo {
+    font-size: 2.5em;
+    margin: 1vh 1vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.headerLinkList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerLinkList li {
+    margin: 1vh 1.25vw;
+    font-size: 1em;
+    list-style: none;
+    transition-duration: 200ms;
+}
+.headerLinkList li:hover {
+    margin: 1vh 1.25vw;
+    padding: 0vh 0vw;
+    font-size: 1.25em;
+    list-style: none;
+    transition-duration: 300ms;
+}
+
+
+.headerLinkList li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width:961px) {
+    .headerContainer{
+        margin-top: 0vh;
+        width: 100vw;
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width:960px) {
+    .headerContainer{
+        margin-top:0vh;
+        width: 100vw;
+        font-size: 25px;
+    }
+    
+}
+@media screen and (max-width:720px) {
+    .headerContainer{
+        margin-top:0vh;
+        width: 100vw;
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .headerContainer{
+        margin-top:0vh;
+        width: 100vw;
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .headerContainer{
+        margin-top: -10vw;
+        width: 100vw;
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:280px) {
+    .headerContainer{
+        margin-top: -10vw;
+        width: 100vw;
+        font-size: 8px;
+    }
+    
+}

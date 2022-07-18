@@ -19,7 +19,7 @@ module.exports = {
         })
     },
     login: (req, res)=> {
-        User.fineOne({email: req.body.email})
+        User.findOne({email: req.body.email})
         .then((userRecord)=>{
             if(userRecord === null){
                 res.status(400).json({message: "Invalid login"})
@@ -38,7 +38,7 @@ module.exports = {
                                 process.env.JWT_SECRET
                             ),{
                                 httpOnly:true,
-                                expires: newDate(Date.now() + 9000000)
+                                expires: new Date(Date.now() + 9000000)
                             }
                         ).json({
                             message: "success",
@@ -90,13 +90,13 @@ module.exports = {
             })
     },
 
-    groceryItems: (req,res) => {
+    honeyDewItems: (req,res) => {
         User.findByIdAndUpdate({_id: req.jwtpayload.id},req.body,{new:true})
-            .then((groceries)=>{
-                res.json(groceries)
+            .then((toDos)=>{
+                res.json(toDos)
             })
             .catch((err)=>{
-                res.json({message: "Failed to enter into grocery items", err})
+                res.json({message: "Failed to enter into Honey Dew request", err})
             })
     }
 }

@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const bcrypt =  require("bcrypt");
+
 const UserSchema = new mongoose.Schema({
     firstName: {
         type: String,
@@ -12,10 +14,15 @@ const UserSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        required: [true, "Password is required"],
-        minLength:[8,"Password must be ath least 8 characters"]
+        required: [true, "email is required"],
+        minLength:[8,"email must be at least 8 characters"]
     },
-    groceryItems: {
+    password: {
+        type: String,
+        required: [true, "password is required"],
+        minLength: [8,"Password must be at least 8 characters"]
+    },
+    honeyDewItems: {
         type: Array,
         default: []
     },  
