@@ -28,6 +28,7 @@
     color: white;
     box-shadow: 3px 3px 5px rgb(122, 122, 122);
     transition-duration: 200ms;
+    border: none;
 }
 
 .btn:hover {
@@ -43,6 +44,7 @@
     color: white;
     box-shadow: 3px 3px 5px rgb(122, 122, 122);
     transition-duration: 125ms;
+    border: none;
 }
 
 .socialContainer{

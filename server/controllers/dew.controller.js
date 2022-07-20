@@ -5,7 +5,7 @@ const User = require("../models/user.model");
 module.exports = {
     findAllDews: (req, res) => {
         Dew.find()
-        .populate("createdBy", "email")
+        // .populate("createdBy", "email")
         .then((allDews)=> {
             console.log(allDews);
             res.json(allDews);

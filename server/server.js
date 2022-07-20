@@ -13,5 +13,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({extended:true}));
 require("./routes/user.routes")(app);
+require("./routes/dew.routes")(app);
 require('./config/mongoose.config');
 app.listen(process.env.MY_PORT, () => console.log(`You are connected to port ${process.env.MY_PORT}`))

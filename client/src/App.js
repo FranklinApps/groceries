@@ -6,6 +6,7 @@ import LoginRegister from "./components/LoginRegister/LoginRegister";
 import Register from "./components/Register";
 import OneDew from "./components/OneDew";
 import DewForm from "./components/DewForm";
+import EditDew from "./components/EditDew";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/register" element={<Register/>}/>
         <Route path="/dew/:id" element={<OneDew/>}/>
         <Route path="/newDew" element={<DewForm/>}/>
+        <Route path="/dew/edit/:id" element={<EditDew/>}/>
       </Routes>
 
     </BrowserRouter>

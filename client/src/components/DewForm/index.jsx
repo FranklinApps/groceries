@@ -4,9 +4,10 @@ import Header from "../Header"
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 
+
 function DewForm(props){
     const navigate = useNavigate();
-    const [errors, setErrors]= useState("");
+    const [errors, setErrors]= useState([]);
     const {id} = useParams();
     const {view} = props;
     const [task, setTask] = useState("");
@@ -51,7 +52,7 @@ function DewForm(props){
                     setErrors(errorArr);
             })
         } else {
-            axios.post('http://localhost:8000/api/Recipes', {
+            axios.post('http://localhost:8000/api/dews', {
                 task,
                 image,
                 completed,
@@ -82,7 +83,7 @@ function DewForm(props){
             }
             <form className='dewForm' onSubmit={submitHandler}>
                 <div className='dewFormErrorBox'>
-                    {/* {errors.map((err, index) => <p key={index} className='errorMsg'>{err}</p>)} */}
+                    {errors.map((err, index) => <p key={index} className='errorMsg'>{err}</p>)}
                 </div>
                 <div className='formColContainer'>
                     <div className='formCol'>
